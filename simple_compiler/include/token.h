@@ -68,6 +68,7 @@ char* type2str(const TokenType type){
 void handle(const char* src, const Dfstate* initialState, linklist* res) {
     Dfstate newState = *initialState;
     int i;
+    // 一个一个字符读入
     for (i = 0; i < strlen(src); i++) {
         handleState(src[i], &newState, res);
     }

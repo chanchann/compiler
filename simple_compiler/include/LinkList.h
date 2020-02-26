@@ -3,8 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "token.h"
+
 //声明节点结构
 typedef struct Token token; //注意这里结构体引用的问题
+
 typedef struct Linklist{
     token* elem;          //存储char元素
     struct Linklist *next;  //指向直接后继元素的指针
@@ -27,7 +29,7 @@ void traverse(linklist* head){
     }
     linklist* tmp = head->next;
     while(tmp != NULL){
-        // printf("%c\n", tmp->val);
+        printf("%s\n", tmp->elem->val);
         tmp = tmp->next;
     }
     
