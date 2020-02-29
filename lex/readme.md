@@ -52,10 +52,11 @@ https://resources.jointjs.com/demos/javascript-ast
 
 4.大于等于操作符（GE）：如果状态 3 的下一个字符是 =，就进入状态 4，变成 >=。它也是比较操作符的一种情况。
 
-5.数字字面量：在初始状态时，下一个字符是数字，进入这个状态。如果后续仍是数字，就保持在状态 5。
+5.数字字面量：在初始状态时，下一个字符是数字，进入这个状态。如果后续仍是数字，就保持在状态
 
-
-
-### 注意结构体的引用问题
+### 注意结构体的引用问题 (typedef struct)
 
 https://cloud.tencent.com/developer/ask/123992
+
+https://stackoverflow.com/questions/60410314/why-does-using-struct-work-but-typedef-struct-not
+
